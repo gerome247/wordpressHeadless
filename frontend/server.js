@@ -22,6 +22,10 @@ app
             app.render(req, res, actualPage, queryParams);
         });
 
+        server.get('/articles/:slug', (req, res) => {
+            app.render(req, res, '/blogPost', { slug: req.params.slug})
+        });
+
         server.get("/category/:slug", (req, res) => {
             const actualPage = "/category";
             const queryParams = { slug: req.params.slug };
