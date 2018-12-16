@@ -18,7 +18,7 @@ export default class PostIndexPage extends Component {
   render() {
     const { posts } = this.props;
     return (
-      <Layout>
+      <Layout index={false}>
 
         <h1>Post Index</h1>
         <PostIndex limit={20}/>
