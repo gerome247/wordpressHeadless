@@ -39,8 +39,8 @@ class Preview extends Component {
             return <Error statusCode={404} />;
 
         return (
-            <Layout>
-                <Menu menu={this.props.headerMenu} />
+            <Layout {...this.props}>
+                <Menu menu={this.props.mainNav} />
                 <h1>{this.state.post ? this.state.post.title.rendered : ""}</h1>
                 <div
                     dangerouslySetInnerHTML={{

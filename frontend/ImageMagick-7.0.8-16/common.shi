@@ -1,0 +1,27 @@
+# -*- shell-script -*-
+# Copyright 1999-2019 ImageMagick Studio LLC
+# Definitions of optional features and configuration values for this build.
+# Intended for use by test scripts.
+MAGICK_FEATURES='DPC HDRI Cipher OpenMP'
+top_srcdir='/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16'
+top_builddir='/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16'
+
+set -a
+COMPARE="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/utilities/magick compare"
+COMPOSITE="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/utilities/magick composite"
+CONJURE="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/utilities/magick conjure"
+CONVERT="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/utilities/magick convert"
+DISPLAY="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/utilities/magick display"
+IDENTIFY="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/utilities/magick identify"
+MAGICK="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/utilities/magick"
+MONTAGE="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/utilities/magick montage"
+VALIDATE="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/tests/validate"
+DRAWTEST="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/tests/drawtest"
+WANDTEST="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/tests/wandtest"
+LD_LIBRARY_PATH="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/MagickCore/.libs:/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/MagickWand/.libs:${LD_LIBRARY_PATH}"
+MAGICK_CODER_MODULE_PATH="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/coders"
+MAGICK_CONFIGURE_PATH="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/config:/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/config"
+MAGICK_FILTER_MODULE_PATH="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/filters"
+MAGICK_FONT='/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/PerlMagick/demo/Generic.ttf'
+PATH="/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/utilities:/mnt/c/Users/gerome/Code/headless-wp-starter/frontend/ImageMagick-7.0.8-16/tests:${PATH}"
+set +a

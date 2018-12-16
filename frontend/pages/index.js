@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import fetch from "isomorphic-unfetch";
 import Link from "next/link";
 import PageWrapper from "../components/PageWrapper.js";
+import Slider from '../components/Slider';
 import Menu from "../components/Menu.js";
 import { Config } from "../config.js";
 
@@ -40,14 +41,15 @@ class Index extends Component {
             );
         });
         return (
-            <Layout>
-                <Menu menu={this.props.headerMenu} />
-                <img
+            <Layout {...this.props}>
+                <Menu menu={this.props.mainNav} />
+                {/* <img
                     src="/static/images/wordpress-plus-react-header.png"
                     width="815"
                     style={headerImageStyle}
-                />
+                /> */}
                 <h1>{this.props.page.title.rendered}</h1>
+                <Slider />
                 <div
                     dangerouslySetInnerHTML={{
                         __html: this.props.page.content.rendered

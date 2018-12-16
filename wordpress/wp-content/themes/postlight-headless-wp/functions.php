@@ -23,3 +23,7 @@ require_once 'inc/acf-options.php';
 
 // Add custom API endpoints
 require_once 'inc/api-routes.php';
+
+add_theme_support('post-thumbnails');
+set_post_thumbnail_size( 50, 50 ); // 50 pixels wide by 50 pixels tall, box resize mode
+add_image_size( 'single-post-thumbnail', 400, 9999 ); // Permalink thumbnail size

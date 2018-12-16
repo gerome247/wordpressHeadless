@@ -44,8 +44,8 @@ class Category extends Component {
             );
         });
         return (
-            <Layout>
-                <Menu menu={this.props.headerMenu} />
+            <Layout {...this.props}/>
+                <Menu menu={this.props.mainNav} />
                 <h1>{this.props.categories[0].name} Posts</h1>
                 {posts}
             </Layout>

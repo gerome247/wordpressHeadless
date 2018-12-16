@@ -1,0 +1,35 @@
+import React, { Component } from 'react'
+import Carousel from 'nuka-carousel';
+import fetch from "isomorphic-unfetch";
+import { Config } from '../config';
+
+export default class Slider extends Component {
+
+    state = {
+        slides: []
+    }
+
+    //getInitialProps Next JS
+    async componentWillMount() {
+      const slidesRes = await fetch(`${Config.apiUrl}/wp-json/wp/v2/slide?_embed`);
+      const slides = await slidesRes.json();
+      this.setState({
+        slides
+      });
+    }
+
+  render() {
+      const {slides} = this.state;
+    return (
+      <div>
+        <Carousel>
+            {slides.map(slide => <img
+                key={slide.id}
+                alt={slide.title.rendered}
+                src={slide._embedded['wp:featuredmedia'][0].source_url} />
+                )}
+        </Carousel>
+      </div>
+    )
+  }
+}
