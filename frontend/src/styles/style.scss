@@ -8,3 +8,9 @@ body {
       color: $themeColor-Dark
   }
 }
+
+.slider-list {
+  display: block !important;
+  height: auto !important;
+  min-height: 768px !important;
+}
