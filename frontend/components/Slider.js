@@ -26,7 +26,7 @@ export default class Slider extends Component {
             {slides.map(slide => <img
                 key={slide.id}
                 alt={slide.title.rendered}
-                src={slide._embedded['wp:featuredmedia'][0].source_url} />
+                src={slide._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url} />
                 )}
         </Carousel>
       </div>
