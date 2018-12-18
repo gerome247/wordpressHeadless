@@ -38,7 +38,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         result.data.allWordpressPage.edges.forEach(({node}) => {
             createPage({
                 path: node.slug,
-                component: path.resolve('./src/pages/page.js'),
+                component: path.resolve('./src/templates/page.js'),
                 context: {
                     slug: node.slug,
                 }
@@ -47,7 +47,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         result.data.allWordpressPost.edges.forEach(({node}) => {
             createPage({
                 path: `posts/${node.slug}`,
-                component: path.resolve('./src/pages/post.js'),
+                component: path.resolve('./src/templates/post.js'),
                 context: {
                     slug: node.slug,
                 }
