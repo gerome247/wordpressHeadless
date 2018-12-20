@@ -21,6 +21,7 @@
     "express": "^4.16.2",
     "isomorphic-unfetch": "^2.0.0",
     "next": "latest",
+    "now": "^12.1.14",
     "nuka-carousel": "^4.4.4",
     "react": "^16.0.0"
   },
