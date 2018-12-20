@@ -43,11 +43,6 @@ class Index extends Component {
         return (
             <Layout {...this.props}>
                 <Menu menu={this.props.mainNav} />
-                {/* <img
-                    src="/static/images/wordpress-plus-react-header.png"
-                    width="815"
-                    style={headerImageStyle}
-                /> */}
                 <h1>{this.props.page.title.rendered}</h1>
                 <Slider />
                 <div
@@ -55,8 +50,6 @@ class Index extends Component {
                         __html: this.props.page.content.rendered
                     }}
                 />
-                {/* <h2>Posts</h2>
-                {posts} */}
                 <h2>Pages</h2>
                 {pages}
             </Layout>

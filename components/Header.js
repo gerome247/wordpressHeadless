@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
 import Head from "next/head";
-import Menu from "./Menu.js";
 import { Config } from "../config.js";
 import stylesheet from '../src/styles/style.scss'
 class Header extends Component {
@@ -28,7 +27,6 @@ class Header extends Component {
                     <Link href="/">
                         <a><h1>Wordpress Blog</h1></a>
                     </Link>
-                    {/* <Menu menu={this.props.mainNav}/> */}
                 </header>
             </div>
         );

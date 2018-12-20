@@ -26,13 +26,6 @@ class PostIndexPage extends Component {
 
         <h1>Post Index</h1>
         <PostIndex limit={20}/>
-        {/* <ul>
-        {posts.map(post => (
-          <li>
-            {post.title.rendered}
-          </li>
-        ))}
-        </ul> */}
       </Layout>
     )
   }
